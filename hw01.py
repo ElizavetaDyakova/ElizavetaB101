@@ -11,28 +11,28 @@ age = int(input("Введите Ваш возраст "))
 diff = age - 18
 ost = diff % 10
 if diff < 0:
-	if diff == 1:
-		print(name, "  на ", diff, " год меньше 18")
-	elif diff == 2 or diff == 3 or diff == 4:
+	if abs(diff) == 1:
+		print(name, "  на ", abs(diff), " год меньше 18")
+	elif abs(diff) == 2 or abs(diff) == 3 or abs(diff) == 4:
 		print(name, "  на ", abs(diff), " года меньше 18")
 	else:
 		print(name, "  на ", abs(diff), " лет меньше 18")
-elif diff == 0:
+elif abs(diff) == 0:
 	print("Возраст ", name, " равен 18")
 elif diff > 20:
 	if ost == 1:
-		print(name, "  на ", diff, " год больше 18")
+		print(name, "  на ", abs(diff), " год больше 18")
 	elif ost == 2 or ost == 3 or ost == 4:
-		print(name, "  на ", diff, " года больше 18")
+		print(name, "  на ", abs(diff), " года больше 18")
 	else:
-		print(name, "  на ", diff, " лет больше 18")
+		print(name, "  на ", abs(diff), " лет больше 18")
 else:
 	if diff == 1:
-	    print(name, "  на ", diff, " год меньше 18")
+	    print(name, "  на ", abs(diff), " год меньше 18")
 	elif diff == 2 or diff == 3 or diff == 4:
-		print(name, "  на ", diff, " года больше 18")
+		print(name, "  на ", abs(diff), " года больше 18")
 	else:
-		print(name, "  на ", diff, " лет больше 18")
+		print(name, "  на ", abs(diff), " лет больше 18")
 
 
 # Задача-2: Исходные значения двух переменных запросить у пользователя.
